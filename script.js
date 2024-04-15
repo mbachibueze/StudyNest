@@ -21,9 +21,22 @@ const listGroup = document.querySelector(".list-group")
 
 panelCollapse.onclick = function(){
   listGroup.classList.toggle('open')
+
   const isOpen = listGroup.classList.contains('open')
 
-  panelCollapseIcon.classList = isOpen ? "fa-angle-down" : "fa-angle-right"
+  panelCollapseIcon.classList = isOpen ? "fa-solid fa-angle-down" : "fa-solid fa-angle-right"
 
 }
+
+
+const courseIcon = document.querySelector(".featured-course-icon");
+const myIcon = document.querySelector(".featured-course-icon i");
+
+courseIcon.addEventListener("mouseover", function() {
+  myIcon.className = "fa-solid fa-graduation-cap"
+})
+
+courseIcon.addEventListener("mouseout", function() {
+  myIcon.className = "fa-brands fa-github"
+})
 
