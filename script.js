@@ -12,6 +12,18 @@ toggleBtn.onclick = function(){
 const toggleAns = document.querySelector(".fa-angle-down")
 const toggleAnsIcon = document.querySelector(".faq-question i")
 
-toggleAns.onclick = function(){
-  
+
+
+
+const panelCollapse = document.querySelector(".panel-collapse")
+const panelCollapseIcon = document.querySelector(".panel-collapse i")
+const listGroup = document.querySelector(".list-group")
+
+panelCollapse.onclick = function(){
+  listGroup.classList.toggle('open')
+  const isOpen = listGroup.classList.contains('open')
+
+  panelCollapseIcon.classList = isOpen ? "fa-angle-down" : "fa-angle-right"
+
 }
+

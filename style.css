@@ -302,7 +302,7 @@ li a{
   gap: 30px;
 }
 
-.course, .quiz, .reward, .cert, .comments-main, .subscribe{
+.course, .quiz, .reward, .cert, .comments-main, .subscribe, .account{
   box-shadow: 0 0 4px black;
   background-color: white;
 }
@@ -579,9 +579,7 @@ meter{
 
 /* Hero-col-1 */
 
-.hero-col-2{
-  border: 1px solid black;
-}
+
 
 /* Accounts */
 
@@ -589,11 +587,56 @@ meter{
   background-color: white;
 }
 
+
 .account-panel-heading{
   padding: 10px;
 }
 
+.panel-title span{
+  float: right;
+  cursor: pointer;
+}
+
+.list-group{
+  height: 0;
+  display: none;
+  transition: height cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: height 0.7s ease-in-out;
+}
+
+.list-group.open{
+  display: block;
+  height: fit-content;
+}
 
 .list-group-menu li{
-  margin: none;
+  padding: 5px 10px;
 }
+
+
+/* .dropdown_menu{
+  height: 0;
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: #0f905e;
+  overflow: hidden; 
+  transition: height cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: ease 0.7s;
+
+  
+.dropdown_menu li{
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.dropdown_menu li a{
+  color: whitesmoke;
+}
+
+.dropdown_menu.open{
+  height: 200px;
+}
+
+} */
