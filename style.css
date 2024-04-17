@@ -18,9 +18,13 @@ li{
   list-style: none;
 }
 
-li a{
+a{
   text-decoration: none;
   color: black;
+}
+
+.logIn a{
+  color: whitesmoke;
 }
 
 .navigation{
@@ -627,16 +631,24 @@ meter{
   /* justify-content: center; */
 }
 
-.featured{
+.featured-wrapper{
   background-color: white;
   padding: 10px;
-  overflow: hidden;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
   display: flex;
   gap: 10px;
 }
 
+.course-container-1{
+  border: 1px solid black;
+
+}
+
 .featured-course-icon{
-  width: 41.3vw;
+  /* width: 41.3vw; */
+  min-width: 10vw;
   font-size: 30px;
   text-align: center;
   padding: 40px;
@@ -645,6 +657,7 @@ meter{
   transition: ease 0.35s;
   overflow: hidden;
 }
+
 
 @media(max-width: 820px){
   .featured-course-icon{
@@ -662,12 +675,14 @@ meter{
 
 .featured-course-icon:hover{
   background-color: #f3f1f1;
-  content: "\f19D"; ;
 }
 
 .featured-course-icon .fa-graduation-cap{
   font-size: 24px;
-  padding: 8px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
   border-radius: 50%;
   background-color: white;
   box-shadow: 0 0 2px black;
@@ -679,11 +694,11 @@ meter{
 
 .featured-course h4{
   font-weight: 400;
-  font-size: 2vw;
+  font-size: 1vw;
 }
 
 .featured-course ul{
-  font-size: 1.5vw;
+  font-size: 0.8vw;
   display: flex;
   gap: 5px;
   color: goldenrod;

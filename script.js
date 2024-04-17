@@ -33,10 +33,14 @@ const courseIcon = document.querySelector(".featured-course-icon");
 const myIcon = document.querySelector(".featured-course-icon i");
 
 courseIcon.addEventListener("mouseover", function() {
-  myIcon.className = "fa-solid fa-graduation-cap"
+  myIcon.className = "fa-solid fa-graduation-cap";
+  courseIcon.style.backgroundColor = "#f3f1f1";
+  courseIcon.style.transition = "0.5s"
 })
 
 courseIcon.addEventListener("mouseout", function() {
   myIcon.className = "fa-brands fa-github"
+  courseIcon.style.backgroundColor = "#d7d6d6";
+  courseIcon.style.transition = "0.5s"
 })
 
