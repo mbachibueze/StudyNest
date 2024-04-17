@@ -89,7 +89,7 @@ body{
   transition: all 0.5s;
 }
 
-.btn button:hover{
+.btn button:active{
   background: #368466;
 }
 @media(max-width: 450px){
