@@ -21,12 +21,11 @@ body{
   background-color: #18ba7c;
 }
 @media(max-width: 450px){
-
   .container{
-    height: 100%;
+    width: 50vw;
+    height: 70vh;
   }
 }
-
 .header img{
   width: 80px;
 }
@@ -62,6 +61,12 @@ body{
   flex-direction: column;
   width: fit-content;
   gap: 10px;
+}
+
+@media(max-width: 450px){
+  .details{
+    gap: 20px;
+  }
 }
 
 .details input{
@@ -103,11 +108,11 @@ body{
   font-size: 1vw;
   color: white;
 }
-.recovery p{
-  cursor: pointer;
+.recovery p a{
+  text-decoration: none;
+  color: whitesmoke;
 }
-
-.recovery p:hover{
+.recovery p a:hover{
   color: rgb(101, 101, 242);
 }
 

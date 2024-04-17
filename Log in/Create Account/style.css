@@ -12,6 +12,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .main-container{
@@ -22,7 +23,9 @@ body{
   background-color: #18ba7c;
 }
 @media(max-width: 450px){
-
+  .main-container{
+    width: 70vw;
+  }
   .container{
     height: 100%;
   }
@@ -65,7 +68,7 @@ body{
   gap: 10px;
 }
 
-.details input{
+.details input, select{
   padding: 8px 8px;
   outline: none;
   border: none;
@@ -75,6 +78,9 @@ body{
               inset -6px -6px 4px #ffffff;
 }
 
+select{
+  appearance: none;
+}
 
 
 .btn button{
