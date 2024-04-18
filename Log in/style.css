@@ -21,10 +21,10 @@ body{
   background-color: #18ba7c;
 }
 @media(max-width: 450px){
-  .container{
-    width: 80vw;
-    height: 60vh;
+  .main-container{
+    width: 70vw;
   }
+
 }
 .header img{
   width: 80px;
