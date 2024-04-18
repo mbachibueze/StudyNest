@@ -632,18 +632,17 @@ meter{
 }
 
 .featured-wrapper{
-  background-color: white;
+  /* background-color: white; */
   padding: 10px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
 .course-container-1{
-  border: 1px solid black;
-
+  box-shadow: 0 0 4px black;
 }
 
 .featured-course-icon{
@@ -689,7 +688,7 @@ meter{
 }
 
 .featured-course{
-  padding: 20px 0;
+  padding: 20px 5px;
 }
 
 .featured-course h4{
