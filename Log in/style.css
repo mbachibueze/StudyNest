@@ -20,12 +20,12 @@ body{
   border-radius: 10px;
   background-color: #18ba7c;
 }
-@media(max-width: 450px){
+/* @media(max-width: 450px){
   .main-container{
     height: 100vh;
   }
 
-}
+} */
 .header img{
   width: 80px;
 }
