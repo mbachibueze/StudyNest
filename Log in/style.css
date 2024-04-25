@@ -22,7 +22,7 @@ body{
 }
 @media(max-width: 450px){
   .main-container{
-    height: 70vh;
+    height: 100vh;
   }
 
 }
